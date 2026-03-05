@@ -1,0 +1,134 @@
+{
+  "info": {
+    "_postman_id": "e9701832-0a8a-4227-8960-6081ec505fca",
+    "name": "Notificações API",
+    "description": "Testes da API do módulo de notificações",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52939910",
+    "_collection_link": "https://go.postman.co/collection/52939910-e9701832-0a8a-4227-8960-6081ec505fca?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Listar Eventos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/eventos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "eventos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/eventos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "eventos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Criar Evento",
+      "request": {
+        "method": "POST",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Evento",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n\"nome\": \"Palestra sobre APIs REST (Atualizada)\",\r\n\"capacidade\": 80\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/eventos/7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "eventos",
+            "7"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Evento",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/eventos/3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "eventos",
+            "3"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "notificacoes-api",
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/eventos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "eventos"
+          ]
+        },
+        "description": "Testes da API do módulo de notificações"
+      },
+      "response": []
+    }
+  ]
+}
